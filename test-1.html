@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      svg {
+        border: 1px solid #999;
+      }
+      rect {
+        animation-duration: 1s;
+        animation-name: flash;
+        fill-opacity: 0.0;
+      }
+      @keyframes flash {
+        from {
+          fill-opacity: 1.0;
+        }
+        to {
+          fill-opacity: 0.0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+      <rect rx="5" ry="5" x="200" y="200" width="40" height="30" fill="#a00"/>
+      <text x="220" y="215" text-anchor="middle" dominant-baseline="middle" fill="#fff" stroke="none">Hi</text>
+    </svg>
+  </body>
+</html>
